@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare - Magazinul de Animale</title>
+    <link rel="stylesheet" href="style.css"> <!-- Adaugă fișierul CSS aici -->
+    <!-- Adaugă scriptul pentru gestionarea înregistrării și autentificării -->
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Magazinul de Animale</h1>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">Despre Noi</a></li>
+            <li><a href="LoginPage.html">Înregistrare/Login</a></li>
+            <li><a href="GalerieDeProduse.html">Galerie de produse</a></li>
+            <li><a href="Cos.html">Cos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inregistrare">
+    <h2>Înregistrare</h2>
+    <form id="registrationForm" onsubmit="registerUser(event)">
+        <label for="username">Nume Utilizator:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Parolă:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Confirmă Parola:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <button type="submit">Înregistrare</button>
+    </form>
+</section>
+
+<section id="login">
+    <h2>Autentificare</h2>
+    <form id="loginForm" onsubmit="loginUser(event)">
+        <label for="login_username">Nume Utilizator:</label>
+        <input type="text" id="login_username" name="login_username" required>
+
+        <label for="login_password">Parolă:</label>
+        <input type="password" id="login_password" name="login_password" required>
+
+        <button type="submit">Autentificare</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Magazinul de Animale. Toate drepturile rezervate.</p>
+    <!-- Link-uri către rețelele de socializare -->
+    <div class="social-media-links">
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>
